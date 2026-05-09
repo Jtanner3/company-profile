@@ -1,0 +1,117 @@
+.developer-page {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+  gap: 3rem;
+  align-items: center;
+  width: var(--content-width);
+  min-height: calc(100dvh - 72px);
+  margin: 0 auto;
+  padding: 4rem 0 5.5rem;
+}
+
+.developer-image-panel {
+  overflow: hidden;
+  border: 1px solid rgba(20, 33, 61, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 30px 85px rgba(20, 33, 61, 0.18);
+}
+
+.developer-image-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.developer-info {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.developer-info h1 {
+  margin-bottom: 0;
+}
+
+.developer-role {
+  color: #da6b42;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.developer-bio {
+  max-width: 680px;
+  color: #516078;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.developer-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(20, 33, 61, 0.1);
+  border-radius: 8px;
+  background: rgba(20, 33, 61, 0.12);
+}
+
+.developer-stats div {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.developer-stats strong {
+  display: block;
+  color: #28705a;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.developer-stats span {
+  display: block;
+  margin-top: 0.45rem;
+  color: #516078;
+  font-weight: 800;
+}
+
+.developer-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.developer-details article {
+  padding: 1.2rem;
+  border: 1px solid rgba(20, 33, 61, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.developer-details h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.developer-details p {
+  margin-bottom: 0;
+  color: #516078;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .developer-page {
+    grid-template-columns: 1fr;
+  }
+
+  .developer-image-panel {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 680px) {
+  .developer-stats,
+  .developer-details {
+    grid-template-columns: 1fr;
+  }
+}

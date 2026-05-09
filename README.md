@@ -1,29 +1,64 @@
-# README #
+# Company Profile
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Company Profile is an Angular application for presenting a developer/company profile, including landing content, developer details, technology logos, and public image assets.
 
-### What is this repository for? ###
+## Tech Stack
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- Angular 21
+- TypeScript
+- SCSS
+- npm
 
-### How do I get set up? ###
+## Prerequisites
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+- Node.js compatible with Angular 21
+- npm 10 or newer
 
-### Contribution guidelines ###
+## Getting Started
 
-* Writing tests
-* Code review
-* Other guidelines
+Install dependencies:
 
-### Who do I talk to? ###
+```bash
+npm install
+```
 
-* Repo owner or admin
-* Other community or team contact
+Start the local development server:
+
+```bash
+npm start
+```
+
+Open `http://localhost:4200/` in your browser.
+
+## Available Scripts
+
+Run the app locally:
+
+```bash
+npm start
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Run unit tests:
+
+```bash
+npm test
+```
+
+## Project Structure
+
+```text
+public/        Static images, logos, and favicon
+src/app/       Angular app components, routes, and styles
+src/styles.scss Global styles
+angular.json   Angular workspace configuration
+```
+
+## Build Output
+
+Production builds are generated in `dist/`. The directory is ignored by git because it can be recreated with `npm run build`.

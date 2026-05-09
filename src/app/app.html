@@ -1,0 +1,68 @@
+<main class="site-shell">
+  <nav class="topbar" aria-label="Primary navigation">
+    <a class="brand" routerLink="/" fragment="home" aria-label="JTechnology Solutions home">
+      <span class="brand-mark">JTS</span>
+      <span>JTechnology Solutions</span>
+    </a>
+
+    <div class="nav-links">
+      <a routerLink="/" fragment="about">About</a>
+      <a routerLink="/" fragment="services">Services</a>
+      <a routerLink="/" fragment="technology">Technology</a>
+      <a routerLink="/" fragment="portfolio">Solutions</a>
+      <a routerLink="/" fragment="process">Process</a>
+      <a routerLink="/developers">Developer</a>
+      <a routerLink="/" fragment="contact">Contact</a>
+    </div>
+  </nav>
+
+  <router-outlet />
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand footer-brand" routerLink="/" fragment="home" aria-label="JTechnology Solutions home">
+        <span class="brand-mark">JTS</span>
+        <span>JTechnology Solutions</span>
+      </a>
+
+      <p>
+        Custom HRMIS, payroll, attendance monitoring, enterprise reporting, API development, and cloud deployment
+        solutions for modern companies.
+      </p>
+
+      <div class="footer-links" aria-label="Footer navigation">
+        <a routerLink="/" fragment="about">About</a>
+        <a routerLink="/" fragment="services">Services</a>
+        <a routerLink="/" fragment="technology">Technology</a>
+        <a routerLink="/" fragment="portfolio">Solutions</a>
+        <a routerLink="/developers">Developer</a>
+        <a href="mailto:support@jtechnologysolutions.com">support&#64;jtechnologysolutions.com</a>
+      </div>
+
+      <div class="social-links" aria-label="Social accounts">
+        <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-2c-3 .7-3.7-1.2-3.7-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.4-.3-4.9-1.2-4.9-5A3.9 3.9 0 0 1 6.4 8c-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.9 1.1a10 10 0 0 1 5.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.5.1 2.8a3.9 3.9 0 0 1 1.1 2.8c0 3.9-2.5 4.8-4.9 5 .4.3.7.9.7 1.8v2.8c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"
+            />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.8 8.8h3.4V20H4.8V8.8Zm1.7-5A2 2 0 1 1 6.5 8a2 2 0 0 1 0-4.1ZM10.4 8.8h3.3v1.5h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6h-3.4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20h-3.4V8.8Z" />
+          </svg>
+        </a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.4 10.5 22 2h-1.8l-6.6 7.4L8.4 2H2.3l8 11.4L2.3 22h1.8l7-7.7 5.5 7.7h6.1l-8.3-11.5Zm-2.5 2.7-.8-1.1L4.7 3.4h2.8l5.2 7.1.8 1.1 6.7 9.1h-2.8l-5.5-7.5Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© {{ currentYear }} JTechnology Solutions. All Rights Reserved.</span>
+      <span>HRMIS • Payroll • Attendance • APIs • Cloud Deployment</span>
+    </div>
+  </footer>
+</main>

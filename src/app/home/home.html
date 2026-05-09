@@ -1,0 +1,262 @@
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">IT software development startup</p>
+    <h1 id="hero-title">Custom HRMIS, payroll, and business software solutions for modern companies.</h1>
+    <p class="hero-text">
+      JTechnology Solutions builds secure, scalable, and enterprise-ready systems for HR, payroll, attendance,
+      reporting, API integrations, and cloud deployments using Laravel, .NET, Angular, React, Docker, and AWS/VPS.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button primary" href="#contact">Request a demo</a>
+      <a class="button secondary" href="#portfolio">View solutions</a>
+    </div>
+  </div>
+
+  <aside class="hero-dashboard" aria-label="HR and payroll dashboard preview">
+    <div class="dashboard-topline">
+      <span>Payroll Cycle</span>
+      <strong>Ready for Review</strong>
+    </div>
+    <div class="dashboard-grid">
+      <div>
+        <span class="metric">248</span>
+        <span class="metric-label">Employees</span>
+      </div>
+      <div>
+        <span class="metric">98%</span>
+        <span class="metric-label">Attendance synced</span>
+      </div>
+      <div>
+        <span class="metric">12</span>
+        <span class="metric-label">Reports generated</span>
+      </div>
+      <div>
+        <span class="metric">4</span>
+        <span class="metric-label">API integrations</span>
+      </div>
+    </div>
+    <div class="dashboard-chart" aria-hidden="true">
+      <span style="height: 42%"></span>
+      <span style="height: 68%"></span>
+      <span style="height: 54%"></span>
+      <span style="height: 82%"></span>
+      <span style="height: 73%"></span>
+      <span style="height: 92%"></span>
+    </div>
+  </aside>
+</section>
+
+<section class="section about-section" id="about" aria-labelledby="about-title">
+  <div class="section-heading">
+    <p class="eyebrow">About the company</p>
+    <h2 id="about-title">Specialists in HRMIS, payroll, attendance monitoring, and enterprise business systems.</h2>
+  </div>
+
+  <div class="about-layout">
+    <p>
+      We provide custom software development solutions focused on HRMIS, payroll systems, attendance monitoring,
+      enterprise reporting, and business process automation for companies in the Philippines.
+    </p>
+    <p>
+      Our team builds scalable and secure web applications using Laravel, .NET, Angular, React, Docker, REST APIs,
+      and cloud technologies to help businesses streamline operations through reliable, tailored software.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="section-heading">
+    <p class="eyebrow">Services</p>
+    <h2 id="services-title">Focused software services for companies that need dependable business systems.</h2>
+  </div>
+
+  <div class="service-grid">
+    @for (service of services; track service.title) {
+      <article class="service-card">
+        <span class="card-index">0{{ $index + 1 }}</span>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section technology-section" id="technology" aria-labelledby="technology-title">
+  <div class="section-heading">
+    <p class="eyebrow">Technology</p>
+    <h2 id="technology-title">A practical stack for enterprise-ready web apps, APIs, and deployments.</h2>
+  </div>
+
+  <div class="tech-carousel" aria-label="Technology stack">
+    @for (technology of technologies; track technology) {
+      <article
+        class="tech-card"
+        [class.is-active]="activeTechnologyIndex() === $index"
+        (click)="setActiveTechnology($index)"
+      >
+        <img [src]="technology.logo" [alt]="technology.name + ' logo'" />
+        <strong>{{ technology.name }}</strong>
+        <span>{{ technology.category }}</span>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section why-section" aria-labelledby="why-title">
+  <div class="section-heading">
+    <p class="eyebrow">Why choose us</p>
+    <h2 id="why-title">Built for accuracy, security, and real company workflows.</h2>
+  </div>
+
+  <div class="why-grid">
+    @for (highlight of companyHighlights; track highlight.title) {
+      <article class="why-card">
+        <h3>{{ highlight.title }}</h3>
+        <p>{{ highlight.description }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section" id="portfolio" aria-labelledby="portfolio-title">
+  <div class="section-heading">
+    <p class="eyebrow">Featured solutions</p>
+    <h2 id="portfolio-title">Showcase systems for HR, payroll, attendance, and enterprise reporting.</h2>
+  </div>
+
+  <div class="portfolio-list">
+    @for (project of portfolio; track project.name) {
+      <article class="portfolio-item">
+        <p>{{ project.type }}</p>
+        <h3>{{ project.name }}</h3>
+        <span>{{ project.description }}</span>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section process-section" id="process" aria-labelledby="process-title">
+  <div class="section-heading">
+    <p class="eyebrow">Process</p>
+    <h2 id="process-title">A clear path from business requirements to production deployment.</h2>
+  </div>
+
+  <div class="process-list">
+    @for (step of processSteps; track step.title) {
+      <article class="process-item">
+        <span>Step {{ $index + 1 }}</span>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section partners-section" id="partners" aria-labelledby="partners-title">
+  <div class="section-heading">
+    <p class="eyebrow">Supported companies</p>
+    <h2 id="partners-title">Trusted by companies that need dependable digital execution.</h2>
+  </div>
+
+  <div
+    class="partner-carousel"
+    aria-label="Companies and industries supported"
+    (mouseenter)="pausePartnerCarousel()"
+    (mouseleave)="startPartnerCarousel()"
+  >
+    @for (partner of partners; track partner.name) {
+      <article
+        class="partner-tile"
+        [class.is-active]="activePartnerIndex() === $index"
+        (click)="setActivePartner($index)"
+      >
+        <span class="carousel-step">0{{ $index + 1 }}</span>
+        <strong>{{ partner.name }}</strong>
+        <span>{{ partner.industry }}</span>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section feedback-section" aria-labelledby="feedback-title">
+  <div class="section-heading">
+    <p class="eyebrow">Testimonials</p>
+    <h2 id="feedback-title">A focused foundation for HR, payroll, reporting, APIs, and cloud deployments.</h2>
+  </div>
+
+  <div class="feedback-carousel" (mouseenter)="pauseTestimonialCarousel()" (mouseleave)="startTestimonialCarousel()">
+    @for (testimonial of testimonials; track testimonial.name) {
+      <figure
+        class="feedback-card"
+        [class.is-active]="activeTestimonialIndex() === $index"
+        (click)="setActiveTestimonial($index)"
+      >
+        <blockquote>{{ testimonial.quote }}</blockquote>
+        <figcaption>
+          <strong>{{ testimonial.name }}</strong>
+          <span>{{ testimonial.role }}</span>
+        </figcaption>
+      </figure>
+    }
+  </div>
+</section>
+
+<section class="section faq-section" aria-labelledby="faq-title">
+  <div class="section-heading">
+    <p class="eyebrow">FAQ</p>
+    <h2 id="faq-title">Common questions before starting a custom business system.</h2>
+  </div>
+
+  <div class="faq-list">
+    @for (faq of faqs; track faq.question) {
+      <article>
+        <h3>{{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+  <div>
+    <p class="eyebrow">Contact</p>
+    <h2 id="contact-title">Free consultation available for your HRMIS, payroll, or business system.</h2>
+    <p>
+      Share your requirements, current process, timeline, and deployment needs. We will help define the right system
+      scope and recommend a practical path from planning to launch.
+    </p>
+  </div>
+
+  <div class="contact-card">
+    @for (method of contactMethods; track method.label) {
+      <a [href]="method.href">
+        <span class="contact-icon" aria-hidden="true">
+          @switch (method.icon) {
+            @case ('mail') {
+              <svg viewBox="0 0 24 24">
+                <path d="M4 6h16v12H4V6Z" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+            }
+            @case ('phone') {
+              <svg viewBox="0 0 24 24">
+                <path d="M7 5h4l2 5-3 2c1 2 3 4 5 5l2-3 5 2v4c0 1-1 2-2 2A18 18 0 0 1 2 4c0-1 1-2 2-2h3v3Z" />
+              </svg>
+            }
+            @default {
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s7-6 7-13a7 7 0 0 0-14 0c0 7 7 13 7 13Z" />
+                <path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              </svg>
+            }
+          }
+        </span>
+        <span class="contact-copy">
+          <span>{{ method.label }}</span>
+          <strong>{{ method.value }}</strong>
+        </span>
+      </a>
+    }
+  </div>
+</section>
