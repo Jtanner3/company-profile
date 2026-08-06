@@ -70,6 +70,9 @@ export class Home implements OnDestroy {
     { name: 'Docker', category: 'Container deploys', logo: 'logos/docker.png' },
     { name: 'AWS / VPS', category: 'Cloud hosting', logo: 'logos/aws.png' },
     { name: 'REST APIs', category: 'Integrations', logo: 'logos/api.png' },
+    { name: 'Codex', category: 'AI coding agent', logo: 'logos/codex.svg' },
+    { name: 'ChatGPT', category: 'AI-assisted planning', logo: 'logos/chatgpt.png' },
+    { name: 'Copilot', category: 'AI pair programming', logo: 'logos/copilot.png' },
   ];
 
   protected readonly portfolio = [

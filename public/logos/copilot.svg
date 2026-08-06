@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Copilot logo</title>
+  <rect width="64" height="64" rx="14" fill="#14213d" />
+  <path d="M18 30c0-9 5.7-16 14-16s14 7 14 16v15a5 5 0 0 1-5 5H23a5 5 0 0 1-5-5V30Z" fill="#ffffff" />
+  <path d="M22 29c2.5-3.7 5.8-5.5 10-5.5S39.5 25.3 42 29" fill="none" stroke="#7ee0bd" stroke-linecap="round" stroke-width="4" />
+  <circle cx="27" cy="38" r="3" fill="#14213d" />
+  <circle cx="37" cy="38" r="3" fill="#14213d" />
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">HRMIS workforce dashboard preview</title>
+  <desc id="desc">An anonymized dashboard preview with workforce metrics, charts, and review queues.</desc>
+  <rect width="1200" height="760" rx="28" fill="#f7fafc" />
+  <rect x="0" y="0" width="168" height="760" fill="#ffffff" />
+  <rect x="168" y="0" width="1" height="760" fill="#d9e2ec" />
+  <rect x="36" y="36" width="72" height="72" rx="16" fill="#000000" />
+  <text x="72" y="81" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">JT</text>
+  <g fill="#0f172a" font-family="Inter, Arial, sans-serif">
+    <text x="196" y="64" font-size="25" font-weight="800">Workforce dashboard</text>
+    <text x="196" y="91" font-size="13">HRMIS overview</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="34" y="145" fill="#2563eb">Dashboard</text>
+    <text x="34" y="188" fill="#334155">Documentation</text>
+    <text x="34" y="251" fill="#334155">Employees</text>
+    <text x="34" y="294" fill="#334155">Leave</text>
+    <text x="34" y="378" fill="#334155">Payroll</text>
+    <text x="34" y="421" fill="#334155">Reports</text>
+    <text x="34" y="504" fill="#334155">Settings</text>
+  </g>
+  <rect x="196" y="122" width="968" height="116" rx="12" fill="#ffffff" stroke="#d9e2ec" />
+  <text x="216" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="800">HRMIS OVERVIEW</text>
+  <text x="216" y="191" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="850">Workforce dashboard</text>
+  <text x="216" y="216" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="14">Track headcount, movements, coverage, and review queues in one focused view.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="950" y="159" width="174" height="44" rx="5" fill="#f8fafc" stroke="#d9e2ec" />
+    <text x="970" y="180" fill="#94a3b8" font-size="10" font-weight="800">EMPLOYEES</text>
+    <text x="970" y="197" fill="#111827" font-size="16" font-weight="850">Active</text>
+    <text x="1046" y="180" fill="#94a3b8" font-size="10" font-weight="800">REVIEWS</text>
+    <text x="1046" y="197" fill="#111827" font-size="16" font-weight="850">Open</text>
+  </g>
+  <g fill="#ffffff" stroke="#d9e2ec">
+    <rect x="196" y="252" width="236" height="74" rx="8" />
+    <rect x="444" y="252" width="236" height="74" rx="8" />
+    <rect x="692" y="252" width="236" height="74" rx="8" />
+    <rect x="940" y="252" width="224" height="74" rx="8" />
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="216" y="278" fill="#94a3b8" font-size="10" font-weight="800">BIRTHDAY CELEBRANTS</text>
+    <text x="216" y="302" fill="#111827" font-size="22" font-weight="850">Monthly view</text>
+    <text x="464" y="278" fill="#94a3b8" font-size="10" font-weight="800">TOTAL EMPLOYEES</text>
+    <text x="464" y="302" fill="#111827" font-size="22" font-weight="850">Active records</text>
+    <text x="712" y="278" fill="#94a3b8" font-size="10" font-weight="800">UPCOMING LEAVES</text>
+    <text x="712" y="302" fill="#111827" font-size="22" font-weight="850">Scheduled</text>
+    <text x="960" y="278" fill="#94a3b8" font-size="10" font-weight="800">FOR REVIEW</text>
+    <text x="960" y="302" fill="#111827" font-size="22" font-weight="850">Queue</text>
+  </g>
+  <rect x="196" y="340" width="632" height="286" rx="8" fill="#ffffff" stroke="#d9e2ec" />
+  <rect x="844" y="340" width="320" height="286" rx="8" fill="#ffffff" stroke="#d9e2ec" />
+  <text x="216" y="366" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Employee status</text>
+  <text x="864" y="366" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Gender distribution</text>
+  <circle cx="365" cy="486" r="86" fill="none" stroke="#e2e8f0" stroke-width="24" />
+  <circle cx="365" cy="486" r="86" fill="none" stroke="#2563eb" stroke-width="24" stroke-dasharray="440 540" transform="rotate(-90 365 486)" />
+  <circle cx="365" cy="486" r="86" fill="none" stroke="#f59e0b" stroke-width="24" stroke-dasharray="64 540" stroke-dashoffset="-440" transform="rotate(-90 365 486)" />
+  <text x="365" y="490" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="850" text-anchor="middle">Status</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">
+    <circle cx="538" cy="405" r="4" fill="#2563eb" />
+    <text x="552" y="410" fill="#334155">Regular</text>
+    <rect x="538" y="420" width="236" height="4" rx="2" fill="#2563eb" />
+    <circle cx="538" cy="447" r="4" fill="#f59e0b" />
+    <text x="552" y="452" fill="#334155">Probationary</text>
+    <rect x="538" y="462" width="82" height="4" rx="2" fill="#f59e0b" />
+    <circle cx="538" cy="489" r="4" fill="#db2777" />
+    <text x="552" y="494" fill="#334155">Separated</text>
+    <rect x="538" y="504" width="42" height="4" rx="2" fill="#db2777" />
+    <circle cx="538" cy="531" r="4" fill="#64748b" />
+    <text x="552" y="536" fill="#334155">Other statuses</text>
+    <rect x="538" y="546" width="188" height="4" rx="2" fill="#e2e8f0" />
+  </g>
+  <circle cx="1004" cy="486" r="82" fill="none" stroke="#e2e8f0" stroke-width="22" />
+  <circle cx="1004" cy="486" r="82" fill="none" stroke="#3b82f6" stroke-width="22" stroke-dasharray="338 516" transform="rotate(-90 1004 486)" />
+  <circle cx="1004" cy="486" r="82" fill="none" stroke="#db2777" stroke-width="22" stroke-dasharray="150 516" stroke-dashoffset="-338" transform="rotate(-90 1004 486)" />
+  <text x="1004" y="490" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="850" text-anchor="middle">Split</text>
+  <g fill="#ffffff" stroke="#d9e2ec">
+    <rect x="196" y="640" width="304" height="78" rx="8" />
+    <rect x="512" y="640" width="304" height="78" rx="8" />
+    <rect x="828" y="640" width="336" height="78" rx="8" />
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="216" y="671" fill="#94a3b8" font-size="10" font-weight="800">DIVISIONS</text>
+    <text x="216" y="695" fill="#111827" font-size="22" font-weight="850">Org structure</text>
+    <text x="532" y="671" fill="#94a3b8" font-size="10" font-weight="800">BRANCHES</text>
+    <text x="532" y="695" fill="#111827" font-size="22" font-weight="850">Locations</text>
+    <text x="848" y="671" fill="#94a3b8" font-size="10" font-weight="800">DEPARTMENTS</text>
+    <text x="848" y="695" fill="#111827" font-size="22" font-weight="850">Assignment-ready</text>
+  </g>
+</svg>
