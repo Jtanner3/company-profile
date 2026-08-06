@@ -29,35 +29,35 @@ export class Home implements OnDestroy {
     {
       title: 'Custom Business Software',
       description:
-        'Inventory systems, accounting integrations, ERP modules, CRM tools, workflow automation, and internal company portals.',
+        'Inventory systems, accounting integrations, ERP modules, CRM tools, workflow automation, and internal team portals.',
     },
     {
       title: 'Web and API Development',
       description:
-        'REST APIs, third-party integrations, enterprise backend systems, microservices, admin dashboards, and reporting engines.',
+        'REST APIs, third-party integrations, backend services, admin dashboards, authentication flows, and reporting engines.',
     },
     {
       title: 'Cloud and Deployment',
       description:
-        'Docker deployment, VPS setup, AWS hosting, CI/CD pipelines, secure server configuration, and production release support.',
+        'Docker deployment, VPS setup, AWS hosting, secure server configuration, release preparation, and production support.',
     },
   ];
 
-  protected readonly companyHighlights = [
+  protected readonly portfolioHighlights = [
     {
-      title: 'Enterprise-level experience',
+      title: 'Business-rule accuracy',
       description:
-        'Experience building complex HR, payroll, reporting, and attendance modules with business rules that need accuracy.',
+        'Experience building HR, payroll, reporting, and attendance modules where calculations, approvals, and permissions need to be exact.',
     },
     {
-      title: 'Secure and scalable architecture',
+      title: 'Maintainable architecture',
       description:
-        'Modern backend and deployment practices using Laravel, .NET, Docker, VPS, AWS, and maintainable API architecture.',
+        'Backend, frontend, data, and deployment decisions are organized around clean APIs, clear modules, and future changes.',
     },
     {
-      title: 'Local business understanding',
+      title: 'Production mindset',
       description:
-        'Systems are designed with Philippine HR, payroll, attendance, reporting, and compliance workflows in mind.',
+        'Systems are built with testing, deployment, server setup, security, and handoff in mind from the beginning.',
     },
   ];
 
@@ -74,22 +74,22 @@ export class Home implements OnDestroy {
 
   protected readonly portfolio = [
     {
-      type: 'Featured Solution',
+      type: 'Portfolio Project',
       name: 'HRMIS Platform',
       description: 'Employee records, departments, leave workflows, attendance summaries, reports, and employee self-service access.',
     },
     {
-      type: 'Featured Solution',
+      type: 'Portfolio Project',
       name: 'Payroll Management System',
       description: 'Payroll computation, deductions, allowances, payslip generation, approval flows, and export-ready payroll reports.',
     },
     {
-      type: 'Featured Solution',
+      type: 'Portfolio Project',
       name: 'Attendance Monitoring',
       description: 'Biometric attendance integrations, daily time records, late and undertime rules, and attendance dashboards.',
     },
     {
-      type: 'Featured Solution',
+      type: 'Portfolio Project',
       name: 'Enterprise Reporting',
       description: 'PDF exports, government remittance reports, payroll summaries, audit-ready records, and management dashboards.',
     },
@@ -97,43 +97,43 @@ export class Home implements OnDestroy {
 
   protected readonly partners = [
     { name: 'Akiva Holdings Corp.', industry: 'Marketing and Distribution' },
-    { name: 'River Valley Distribution Inc.', industry: 'Marketing, Distribution and Logistics Partner' },
-    { name: 'Mixed-Load Distribution Network, Inc.', industry: 'Marketing, Distribution and Logistics Partner' },
-    { name: 'Integra Management and Development Corporation', industry: 'Marketing, Distribution and Logistics Partner' },
-    { name: 'Bertahan Distribution Corporation', industry: 'Marketing, Distribution and Logistics Partner' },
-    { name: 'Jupiter Distribution Inc.', industry: 'Marketing, Distribution and Logistics Partner' },
+    { name: 'River Valley Distribution Inc.', industry: 'Distribution and Logistics' },
+    { name: 'Mixed-Load Distribution Network, Inc.', industry: 'Distribution and Logistics' },
+    { name: 'Integra Management and Development Corporation', industry: 'Operations and Management' },
+    { name: 'Bertahan Distribution Corporation', industry: 'Distribution Operations' },
+    { name: 'Jupiter Distribution Inc.', industry: 'Distribution Operations' },
   ];
 
   protected readonly testimonials = [
     {
-      quote: 'HRMIS platforms built around employee records, attendance, leave workflows, and management visibility.',
-      name: 'HRMIS Platforms',
+      quote: 'HRMIS work centered on employee records, attendance, leave workflows, roles, and management visibility.',
+      name: 'HRMIS Development',
       role: 'Employee management systems',
     },
     {
-      quote: 'Payroll systems designed for accurate computation, payslip generation, deductions, and export-ready reporting.',
-      name: 'Payroll Systems',
+      quote: 'Payroll modules designed for accurate computation, payslip generation, deductions, and export-ready reporting.',
+      name: 'Payroll Engineering',
       role: 'Computation and reporting',
     },
     {
-      quote: 'Production deployments supported through Docker, VPS, AWS, secure configuration, and release maintenance.',
-      name: 'Cloud Deployments',
+      quote: 'Production releases supported through Docker, VPS, AWS, secure configuration, and release maintenance.',
+      name: 'Deployment Support',
       role: 'Deployment and support',
     },
   ];
 
   protected readonly processSteps = [
     {
-      title: 'Consultation',
-      description: 'Understand business requirements, payroll rules, workflow challenges, and current system limitations.',
+      title: 'Discovery',
+      description: 'Understand requirements, business rules, workflow challenges, users, permissions, and current system limitations.',
     },
     {
-      title: 'System Planning',
-      description: 'Design the modules, database structure, roles, reports, integrations, and secure software architecture.',
+      title: 'System Design',
+      description: 'Plan modules, database structure, roles, reports, integrations, and secure software architecture.',
     },
     {
       title: 'Development',
-      description: 'Build the application using modern frameworks, clean APIs, responsive interfaces, and iterative previews.',
+      description: 'Build the application with modern frameworks, clean APIs, responsive interfaces, and iterative previews.',
     },
     {
       title: 'Testing and Deployment',
@@ -147,9 +147,9 @@ export class Home implements OnDestroy {
 
   protected readonly faqs = [
     {
-      question: 'Can you build a custom HRMIS and payroll system for our company?',
+      question: 'Can you build a custom HRMIS or payroll system?',
       answer:
-        'Yes. Systems can be tailored around your employee records, payroll rules, attendance policies, approval flows, and reporting needs.',
+        'Yes. I can tailor the system around employee records, payroll rules, attendance policies, approval flows, and reporting needs.',
     },
     {
       question: 'Do you support biometric attendance integrations?',
@@ -164,9 +164,9 @@ export class Home implements OnDestroy {
   ];
 
   protected readonly contactMethods = [
-    { label: 'Email', value: 'support@jtechnologysolutions.com', href: 'mailto:support@jtechnologysolutions.com', icon: 'mail' },
-    { label: 'Consultation', value: 'Available by appointment', href: 'mailto:support@jtechnologysolutions.com', icon: 'phone' },
-    { label: 'Location', value: 'Philippines and remote delivery', href: '#contact', icon: 'location' },
+    { label: 'Email', value: 'jason.tana.3@gmail.com', href: 'mailto:jason.tana.3@gmail.com', icon: 'mail' },
+    { label: 'Availability', value: 'Open to project discussions', href: 'mailto:jason.tana.3@gmail.com', icon: 'phone' },
+    { label: 'Location', value: 'Philippines and remote work', href: '#contact', icon: 'location' },
   ];
 
   protected setActiveTechnology(index: number): void {

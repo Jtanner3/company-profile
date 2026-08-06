@@ -1,6 +1,6 @@
-# Company Profile
+# Jason Taña Portfolio
 
-Company Profile is an Angular application for presenting a developer/company profile, including landing content, developer details, technology logos, and public image assets.
+Jason Taña Portfolio is an Angular application for presenting a full-stack developer portfolio, including landing content, developer details, technology logos, project highlights, and public image assets.
 
 ## Tech Stack
 

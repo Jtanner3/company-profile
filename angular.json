@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "company-profile": {
+    "jason-tana-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -60,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "company-profile:build:production"
+              "buildTarget": "jason-tana-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "company-profile:build:development"
+              "buildTarget": "jason-tana-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
