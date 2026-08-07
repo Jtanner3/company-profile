@@ -1,64 +1,43 @@
 # Jason Taña Portfolio
 
-Jason Taña Portfolio is an Angular application for presenting a full-stack developer portfolio, including landing content, developer details, technology logos, project highlights, and public image assets.
+[![Angular Junior Certificate](https://img.shields.io/badge/Angular_Certified-Junior-DD0031?style=for-the-badge&logo=angular&logoColor=white&labelColor=7B1A1A)](https://certificates.dev/angular/certificates/9e6c0071-0b95-4bba-98b5-14b7e2407cda)
 
-## Tech Stack
+A full-stack developer focused on practical business systems, APIs, dashboards, reporting, and production-ready web applications.
 
-- Angular 21
-- TypeScript
-- SCSS
-- npm
+## About
 
-## Prerequisites
+I build custom software for HRMIS, payroll, attendance monitoring, enterprise reporting, workflow automation, API integrations, and cloud/VPS deployments. My work focuses on accurate business logic, maintainable architecture, clean interfaces, and reliable production delivery.
 
-- Node.js compatible with Angular 21
-- npm 10 or newer
+## Featured Work
 
-## Getting Started
+- HRMIS workforce dashboard
+- Payroll management systems
+- Attendance monitoring and biometric integrations
+- Enterprise reporting and PDF exports
+- REST API development and third-party integrations
+- Docker, VPS, and AWS deployment support
 
-Install dependencies:
+## Technology Stack
 
-```bash
-npm install
-```
+- Laravel
+- .NET
+- Angular
+- React
+- MySQL
+- Docker
+- AWS / VPS
+- REST APIs
+- Codex
+- ChatGPT
+- Copilot
 
-Start the local development server:
+## Certification
 
-```bash
-npm start
-```
+- Certified Junior Angular Developer, Certificates.dev
+- Issued March 13, 2025
+- Credential ID: `9e6c0071-0b95-4bba-98b5-14b7e2407cda`
+- Verification: https://certificates.dev/c/9e6c0071-0b95-4bba-98b5-14b7e2407cda
 
-Open `http://localhost:4200/` in your browser.
+## Contact
 
-## Available Scripts
-
-Run the app locally:
-
-```bash
-npm start
-```
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-Run unit tests:
-
-```bash
-npm test
-```
-
-## Project Structure
-
-```text
-public/        Static images, logos, and favicon
-src/app/       Angular app components, routes, and styles
-src/styles.scss Global styles
-angular.json   Angular workspace configuration
-```
-
-## Build Output
-
-Production builds are generated in `dist/`. The directory is ignored by git because it can be recreated with `npm run build`.
+Email: jason.tana.3@gmail.com
