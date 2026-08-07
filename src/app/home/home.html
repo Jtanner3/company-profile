@@ -103,6 +103,35 @@
   </div>
 </section>
 
+<section class="section certifications-section" id="certifications" aria-labelledby="certifications-title">
+  <div class="section-heading">
+    <p class="eyebrow">Certifications</p>
+    <h2 id="certifications-title">Verified credentials that back up the stack.</h2>
+  </div>
+
+  <div class="certification-grid">
+    @for (certification of certifications; track certification.credentialId) {
+      <article class="certification-card">
+        <div class="certification-logo" aria-hidden="true">
+          <img [src]="certification.logo" [alt]="certification.issuer + ' logo'" />
+        </div>
+        <div class="certification-copy">
+          <p>{{ certification.issuer }}</p>
+          <h3>{{ certification.title }}</h3>
+          <span>{{ certification.description }}</span>
+        </div>
+        <dl class="certification-meta">
+          <div>
+            <dt>Issued</dt>
+            <dd>{{ certification.issued }}</dd>
+          </div>
+        </dl>
+        <a class="button secondary" [href]="certification.url" target="_blank" rel="noreferrer">View certificate</a>
+      </article>
+    }
+  </div>
+</section>
+
 <section class="section why-section" aria-labelledby="why-title">
   <div class="section-heading">
     <p class="eyebrow">Strengths</p>

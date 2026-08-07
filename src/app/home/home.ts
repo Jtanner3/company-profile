@@ -75,6 +75,19 @@ export class Home implements OnDestroy {
     { name: 'Copilot', category: 'AI pair programming', logo: 'logos/copilot.png' },
   ];
 
+  protected readonly certifications = [
+    {
+      title: 'Certified Junior Angular Developer',
+      issuer: 'Certificates.dev',
+      issued: 'March 13, 2025',
+      credentialId: '9e6c0071-0b95-4bba-98b5-14b7e2407cda',
+      description:
+        'Validated Angular fundamentals including components, services, dependency injection, routing, reactive forms, RxJS, change detection, and TypeScript patterns.',
+      logo: 'logos/angular.png',
+      url: 'https://certificates.dev/c/9e6c0071-0b95-4bba-98b5-14b7e2407cda',
+    },
+  ];
+
   protected readonly portfolio = [
     {
       type: 'Portfolio Project',

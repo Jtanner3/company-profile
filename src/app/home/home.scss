@@ -157,6 +157,7 @@
 .process-item,
 .faq-list article,
 .portfolio-item,
+.certification-card,
 .tech-card,
 .partner-tile,
 .feedback-card,
@@ -270,6 +271,83 @@
 
 .tech-card:is(.is-active, :hover, :focus-visible) span {
   color: #516078;
+}
+
+.certifications-section {
+  padding-bottom: 3rem;
+}
+
+.certification-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.certification-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) minmax(260px, 0.55fr) auto;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.35rem;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.certification-logo {
+  display: grid;
+  place-items: center;
+  width: 4.25rem;
+  aspect-ratio: 1;
+  border: 1px solid rgba(20, 33, 61, 0.1);
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.certification-logo img {
+  width: 2.85rem;
+  height: 2.85rem;
+  object-fit: contain;
+}
+
+.certification-copy p {
+  margin-bottom: 0.45rem;
+  color: #28705a;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.certification-copy h3 {
+  margin-bottom: 0.55rem;
+}
+
+.certification-copy span {
+  color: #516078;
+  line-height: 1.7;
+}
+
+.certification-meta {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.certification-meta div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.certification-meta dt {
+  color: #516078;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.certification-meta dd {
+  margin: 0;
+  color: #14213d;
+  font-size: 0.9rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .why-card,
@@ -598,6 +676,15 @@
     grid-template-columns: 1fr;
   }
 
+  .certification-card {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .certification-meta,
+  .certification-card .button {
+    grid-column: 1 / -1;
+  }
+
   .proof-card {
     grid-template-columns: 1fr;
   }
@@ -623,6 +710,14 @@
   .partner-tile,
   .feedback-card {
     min-height: 220px;
+  }
+
+  .certification-card {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-logo {
+    width: 3.75rem;
   }
 
   .partner-tile span {
